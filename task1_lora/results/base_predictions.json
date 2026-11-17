@@ -1,0 +1,1202 @@
+[
+  {
+    "input": "can you ping me to send the invoice to the client on December 16th, 2026, no rush",
+    "gold": {
+      "intent": "reminder",
+      "title": "send the invoice to the client",
+      "date": "2026-12-16",
+      "time": null,
+      "priority": "low"
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Invoice\",\n  \"date\": \"2026-12-16\",\n  \"time\": \"\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "schedule a meeting about the alumni meetup at 16:45 on 2026-04-18",
+    "gold": {
+      "intent": "meeting",
+      "title": "the alumni meetup",
+      "date": "2026-04-18",
+      "time": "16:45",
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Alumni Meetup\",\n  \"date\": \"2026-04-18T16:45:00\",\n  \"time\": \"16:45\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "log 'fix the bike tyre' as something I have to do on 12 June",
+    "gold": {
+      "intent": "task",
+      "title": "fix the bike tyre",
+      "date": "2026-06-12",
+      "time": null,
+      "priority": null
+    },
+    "raw_output": "{\"intent\":\"reminder\",\"title\":\"fix the bike tyre\",\"date\":\"2026-06-12\",\"time\":null,\"priority\":\"high\"}",
+    "exact": false
+  },
+  {
+    "input": "book a call to discuss the roadmap workshop at 9.30 pm on 2026-12-29, low priority",
+    "gold": {
+      "intent": "meeting",
+      "title": "the roadmap workshop",
+      "date": "2026-12-29",
+      "time": "21:30",
+      "priority": "low"
+    },
+    "raw_output": "{\"intent\":\"reminder\",\"title\":\"book a call to discuss the roadmap workshop\",\"date\":\"2026-12-29\",\"time\":\"21:30\",\"priority\":\"low\"}",
+    "exact": false
+  },
+  {
+    "input": "please remind me to refill my prescription on 1 June, it's urgent",
+    "gold": {
+      "intent": "reminder",
+      "title": "refill my prescription",
+      "date": "2026-06-01",
+      "time": null,
+      "priority": "high"
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Refill Prescription\",\n  \"date\": \"2026-06-01\",\n  \"time\": \"\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "add a task to send the invoice to the client on 30th September at 5.45 pm, no rush",
+    "gold": {
+      "intent": "task",
+      "title": "send the invoice to the client",
+      "date": "2026-09-30",
+      "time": "17:45",
+      "priority": "low"
+    },
+    "raw_output": "{\n  \"intent\": \"task\",\n  \"title\": \"send invoice to client\",\n  \"date\": \"2026-09-30T17:45:00\",\n  \"time\": \"17:45\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "set a reminder to clean the fish tank at 2.00 pm",
+    "gold": {
+      "intent": "reminder",
+      "title": "clean the fish tank",
+      "date": null,
+      "time": "14:00",
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Clean the Fish Tank\",\n  \"date\": \"2026-10-05\",\n  \"time\": \"13:00\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "remind me to refill my prescription at 06:30",
+    "gold": {
+      "intent": "reminder",
+      "title": "refill my prescription",
+      "date": null,
+      "time": "06:30",
+      "priority": null
+    },
+    "raw_output": "{\"intent\":\"reminder\",\"title\":\"refill prescription at 06:30\",\"date\":\"\",\"time\":\"06:30\",\"priority\":\"\"}",
+    "exact": false
+  },
+  {
+    "input": "set up a meeting for the alumni meetup at 1915 hours on Apr 9, top priority",
+    "gold": {
+      "intent": "meeting",
+      "title": "the alumni meetup",
+      "date": "2026-04-09",
+      "time": "19:15",
+      "priority": "high"
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Alumni Meetup\",\n  \"date\": \"2026-04-09T19:15:00\",\n  \"time\": \"19:15\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "please book a call to discuss the customer churn analysis on 13th June at 5 in the evening",
+    "gold": {
+      "intent": "meeting",
+      "title": "the customer churn analysis",
+      "date": "2026-06-13",
+      "time": "17:00",
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Customer Churn Analysis Meeting\",\n  \"date\": \"2026-06-13\",\n  \"time\": \"19:00\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "log 'send the invoice to the client' as something I have to do on the 27th of April at 5:15 pm, high priority",
+    "gold": {
+      "intent": "task",
+      "title": "send the invoice to the client",
+      "date": "2026-04-27",
+      "time": "17:15",
+      "priority": "high"
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"send the invoice to the client\",\n  \"date\": \"2026-04-27\",\n  \"time\": \"15:15\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "please book a call to discuss the capstone review at 7.30 am, top priority",
+    "gold": {
+      "intent": "meeting",
+      "title": "the capstone review",
+      "date": null,
+      "time": "07:30",
+      "priority": "high"
+    },
+    "raw_output": "{\n  \"intent\": \"call\",\n  \"title\": \"Capstone Review\",\n  \"date\": \"2026-10-05\",\n  \"time\": \"07:30\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "book a call to discuss the capstone review at 21:45, no rush",
+    "gold": {
+      "intent": "meeting",
+      "title": "the capstone review",
+      "date": null,
+      "time": "21:45",
+      "priority": "low"
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Capstone Review Meeting\",\n  \"date\": \"2026-03-19\",\n  \"time\": \"21:45\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "schedule a meeting about server cost optimisation at 7:15pm on 2026-10-19",
+    "gold": {
+      "intent": "meeting",
+      "title": "server cost optimisation",
+      "date": "2026-10-19",
+      "time": "19:15",
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"server cost optimisation\",\n  \"date\": \"2026-10-19T18:15:00\",\n  \"time\": \"18:15\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "please don't let me forget to fix the bike tyre on 10th April at 1:15 pm",
+    "gold": {
+      "intent": "reminder",
+      "title": "fix the bike tyre",
+      "date": "2026-04-10",
+      "time": "13:15",
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Fix bike tyre\",\n  \"date\": \"2023-04-10\",\n  \"time\": \"13:15\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "please set up a meeting for server cost optimisation on 2026-07-15 at 21:15, normal priority",
+    "gold": {
+      "intent": "meeting",
+      "title": "server cost optimisation",
+      "date": "2026-07-15",
+      "time": "21:15",
+      "priority": "medium"
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Server Cost Optimisation\",\n  \"date\": \"2026-07-15\",\n  \"time\": \"21:15\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "please set up a meeting for the customer churn analysis at 1:30 pm on 13 April, medium priority",
+    "gold": {
+      "intent": "meeting",
+      "title": "the customer churn analysis",
+      "date": "2026-04-13",
+      "time": "13:30",
+      "priority": "medium"
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Customer Churn Analysis Meeting\",\n  \"date\": \"2026-04-13T13:30:00\",\n  \"time\": \"13:30\",\n  \"priority\": \"medium\"\n}",
+    "exact": false
+  },
+  {
+    "input": "add a task to collect my transcripts at 1100 hours, low priority",
+    "gold": {
+      "intent": "task",
+      "title": "collect my transcripts",
+      "date": null,
+      "time": "11:00",
+      "priority": "low"
+    },
+    "raw_output": "{\n  \"intent\": \"task\",\n  \"title\": \"collect transcripts\",\n  \"date\": \"2023-05-19\",\n  \"time\": \"11:00\",\n  \"priority\": \"low\"\n}",
+    "exact": false
+  },
+  {
+    "input": "book a call to discuss the capstone review at 1115 hours, no rush",
+    "gold": {
+      "intent": "meeting",
+      "title": "the capstone review",
+      "date": null,
+      "time": "11:15",
+      "priority": "low"
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Capstone Review Meeting\",\n  \"date\": \"2026-03-11\",\n  \"time\": \"11:15\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "book a call to discuss the capstone review, top priority",
+    "gold": {
+      "intent": "meeting",
+      "title": "the capstone review",
+      "date": null,
+      "time": null,
+      "priority": "high"
+    },
+    "raw_output": "{\n  \"intent\": \"call\",\n  \"title\": \"Discuss Capstone Review\",\n  \"date\": \"2027-10-15\",\n  \"time\": \"13:00\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "book a call to discuss the capstone review on 2026-06-09",
+    "gold": {
+      "intent": "meeting",
+      "title": "the capstone review",
+      "date": "2026-06-09",
+      "time": null,
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Capstone Review Meeting\",\n  \"date\": \"2026-06-09\",\n  \"time\": \"\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "please don't let me forget to collect my transcripts at 8:45pm on the 22nd of June, it's urgent",
+    "gold": {
+      "intent": "reminder",
+      "title": "collect my transcripts",
+      "date": "2026-06-22",
+      "time": "20:45",
+      "priority": "high"
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Collected Transcripts\",\n  \"date\": \"2026-06-22\",\n  \"time\": \"19:45\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "book a call to discuss the data privacy audit at 0900 hours on 2026-09-03",
+    "gold": {
+      "intent": "meeting",
+      "title": "the data privacy audit",
+      "date": "2026-09-03",
+      "time": "09:00",
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Discuss Data Privacy Audit\",\n  \"date\": \"2026-09-03T09:00:00\",\n  \"time\": \"15:00\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "remind me to clean the fish tank on 26 July at 7.45 pm, normal priority",
+    "gold": {
+      "intent": "reminder",
+      "title": "clean the fish tank",
+      "date": "2026-07-26",
+      "time": "19:45",
+      "priority": "medium"
+    },
+    "raw_output": "{\"intent\":\"reminder\",\"title\":\"Clean the fish tank\",\"date\":\"2026-07-26\",\"time\":\"19:45\",\"priority\":\"high\"}",
+    "exact": false
+  },
+  {
+    "input": "schedule a meeting about server cost optimisation on December 17th, 2026 at 7 am, no rush",
+    "gold": {
+      "intent": "meeting",
+      "title": "server cost optimisation",
+      "date": "2026-12-17",
+      "time": "07:00",
+      "priority": "low"
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"server cost optimisation\",\n  \"date\": \"2026-12-17\",\n  \"time\": \"07:00\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "set a reminder to update the project readme on 2026-01-27 at 7:15pm, high priority",
+    "gold": {
+      "intent": "reminder",
+      "title": "update the project readme",
+      "date": "2026-01-27",
+      "time": "19:15",
+      "priority": "high"
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Update project README\",\n  \"date\": \"2026-01-27\",\n  \"time\": \"19:15\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "please put 'update the project readme' on my to-do list on Oct 20 at 06:00",
+    "gold": {
+      "intent": "task",
+      "title": "update the project readme",
+      "date": "2026-10-20",
+      "time": "06:00",
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Update project README\",\n  \"date\": \"2026-10-20\",\n  \"time\": \"06:00\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "please can you ping me to send the invoice to the client",
+    "gold": {
+      "intent": "reminder",
+      "title": "send the invoice to the client",
+      "date": null,
+      "time": null,
+      "priority": null
+    },
+    "raw_output": "```json\n{\n  \"intent\": \"invoice\",\n  \"title\": \"Invoice for Client\",\n  \"date\": \"2026-10-31\",\n  \"time\": \"\",\n  \"priority\": \"high\"\n}\n```",
+    "exact": false
+  },
+  {
+    "input": "can you ping me to fix the bike tyre on 15/12/2026 at 3.15 pm, normal priority",
+    "gold": {
+      "intent": "reminder",
+      "title": "fix the bike tyre",
+      "date": "2026-12-15",
+      "time": "15:15",
+      "priority": "medium"
+    },
+    "raw_output": "{\n  \"intent\": \"task\",\n  \"title\": \"Fix bike tyre\",\n  \"date\": \"2026-12-15\",\n  \"time\": \"13:15\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "please can you ping me to clean the fish tank on January 22nd, 2026 at 8:15pm, medium priority",
+    "gold": {
+      "intent": "reminder",
+      "title": "clean the fish tank",
+      "date": "2026-01-22",
+      "time": "20:15",
+      "priority": "medium"
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Clean fish tank\",\n  \"date\": \"2026-01-22\",\n  \"time\": \"23:15\",\n  \"priority\": \"medium\"\n}",
+    "exact": false
+  },
+  {
+    "input": "add a task to update the project readme on 26/05/2026, medium priority",
+    "gold": {
+      "intent": "task",
+      "title": "update the project readme",
+      "date": "2026-05-26",
+      "time": null,
+      "priority": "medium"
+    },
+    "raw_output": "{\n  \"intent\": \"task\",\n  \"title\": \"update README\",\n  \"date\": \"2026-05-26\",\n  \"time\": \"13:00\",\n  \"priority\": \"medium\"\n}",
+    "exact": false
+  },
+  {
+    "input": "remind me to collect my transcripts on the 23rd of September at 7:45am",
+    "gold": {
+      "intent": "reminder",
+      "title": "collect my transcripts",
+      "date": "2026-09-23",
+      "time": "07:45",
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Collect transcripts\",\n  \"date\": \"2026-09-23\",\n  \"time\": \"13:45\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "can you ping me to collect my transcripts on 12th August",
+    "gold": {
+      "intent": "reminder",
+      "title": "collect my transcripts",
+      "date": "2026-08-12",
+      "time": null,
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"task\",\n  \"title\": \"collect transcripts\",\n  \"date\": \"2023-08-12\",\n  \"time\": \"\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "remind me to send the invoice to the client",
+    "gold": {
+      "intent": "reminder",
+      "title": "send the invoice to the client",
+      "date": null,
+      "time": null,
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"send invoice\",\n  \"date\": \"2026-10-31\",\n  \"time\": \"\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "book a call to discuss the customer churn analysis at 7.45 am",
+    "gold": {
+      "intent": "meeting",
+      "title": "the customer churn analysis",
+      "date": null,
+      "time": "07:45",
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Discuss Customer Churn Analysis\",\n  \"date\": \"2023-10-04\",\n  \"time\": \"10:45\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "new task: collect my transcripts at 8pm on the 3rd of December, low priority",
+    "gold": {
+      "intent": "task",
+      "title": "collect my transcripts",
+      "date": "2026-12-03",
+      "time": "20:00",
+      "priority": "low"
+    },
+    "raw_output": "{\n  \"intent\": \"task\",\n  \"title\": \"collect my transcripts\",\n  \"date\": \"2026-12-31\",\n  \"time\": \"21:00\",\n  \"priority\": \"low\"\n}",
+    "exact": false
+  },
+  {
+    "input": "schedule a meeting about the capstone review on 2026-10-01 at 6:15 am, it's urgent",
+    "gold": {
+      "intent": "meeting",
+      "title": "the capstone review",
+      "date": "2026-10-01",
+      "time": "06:15",
+      "priority": "high"
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Capstone Review Meeting\",\n  \"date\": \"2026-10-01\",\n  \"time\": \"13:15\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "can you ping me to clean the fish tank on October 18 at 0915 hours, medium priority",
+    "gold": {
+      "intent": "reminder",
+      "title": "clean the fish tank",
+      "date": "2026-10-18",
+      "time": "09:15",
+      "priority": "medium"
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Clean the fish tank\",\n  \"date\": \"2023-10-18\",\n  \"time\": \"09:15\",\n  \"priority\": \"medium\"\n}",
+    "exact": false
+  },
+  {
+    "input": "log 'clean the fish tank' as something I have to do at 9.30 pm on 2026-05-02, medium priority",
+    "gold": {
+      "intent": "task",
+      "title": "clean the fish tank",
+      "date": "2026-05-02",
+      "time": "21:30",
+      "priority": "medium"
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Clean the fish tank\",\n  \"date\": \"2026-05-02T21:30:00\",\n  \"time\": \"18:30\",\n  \"priority\": \"medium\"\n}",
+    "exact": false
+  },
+  {
+    "input": "please book a call to discuss the data privacy audit at 2:15 pm on 2026-07-18",
+    "gold": {
+      "intent": "meeting",
+      "title": "the data privacy audit",
+      "date": "2026-07-18",
+      "time": "14:15",
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Data Privacy Audit\",\n  \"date\": \"2026-07-18T13:15:00\",\n  \"time\": \"13:15\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "I need a sync on the roadmap workshop, normal priority",
+    "gold": {
+      "intent": "meeting",
+      "title": "the roadmap workshop",
+      "date": null,
+      "time": null,
+      "priority": "medium"
+    },
+    "raw_output": "{\n  \"intent\": \"sync\",\n  \"title\": \"Roadmap Workshop\",\n  \"date\": \"2026-10-05\",\n  \"time\": \"13:00\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "book a call to discuss the roadmap workshop on Jul 6, medium priority",
+    "gold": {
+      "intent": "meeting",
+      "title": "the roadmap workshop",
+      "date": "2026-07-06",
+      "time": null,
+      "priority": "medium"
+    },
+    "raw_output": "{\"intent\":\"meeting\",\"title\":\"roadmap workshop\",\"date\":\"2023-07-06\",\"time\":\"15:00\",\"priority\":\"medium\"}",
+    "exact": false
+  },
+  {
+    "input": "put 'refill my prescription' on my to-do list on 2026-07-06, top priority",
+    "gold": {
+      "intent": "task",
+      "title": "refill my prescription",
+      "date": "2026-07-06",
+      "time": null,
+      "priority": "high"
+    },
+    "raw_output": "{\"intent\":\"reminder\",\"title\":\"refill my prescription\",\"date\":\"2026-07-06\",\"time\":null,\"priority\":\"high\"}",
+    "exact": false
+  },
+  {
+    "input": "can you ping me to clean the fish tank at 19:00 on November 16th, 2026, low priority",
+    "gold": {
+      "intent": "reminder",
+      "title": "clean the fish tank",
+      "date": "2026-11-16",
+      "time": "19:00",
+      "priority": "low"
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Clean the fish tank\",\n  \"date\": \"2026-11-16\",\n  \"time\": \"19:00\",\n  \"priority\": \"low\"\n}",
+    "exact": false
+  },
+  {
+    "input": "book a call to discuss the data privacy audit at 1130 hours",
+    "gold": {
+      "intent": "meeting",
+      "title": "the data privacy audit",
+      "date": null,
+      "time": "11:30",
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Discuss Data Privacy Audit\",\n  \"date\": \"2026-03-11\",\n  \"time\": \"11:30\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "please add a task to refill my prescription on March 8 at 9:30pm",
+    "gold": {
+      "intent": "task",
+      "title": "refill my prescription",
+      "date": "2026-03-08",
+      "time": "21:30",
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"task\",\n  \"title\": \"Refill Prescription\",\n  \"date\": \"2026-03-08\",\n  \"time\": \"21:30\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "don't let me forget to update the project readme at 10:15 am, low priority",
+    "gold": {
+      "intent": "reminder",
+      "title": "update the project readme",
+      "date": null,
+      "time": "10:15",
+      "priority": "low"
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Update README at 10:15 AM\",\n  \"date\": \"2023-04-19\",\n  \"time\": \"10:15\",\n  \"priority\": \"low\"\n}",
+    "exact": false
+  },
+  {
+    "input": "book a call to discuss server cost optimisation at 11:30 am, low priority",
+    "gold": {
+      "intent": "meeting",
+      "title": "server cost optimisation",
+      "date": null,
+      "time": "11:30",
+      "priority": "low"
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Discuss Server Cost Optimisation\",\n  \"date\": \"2026-04-15\",\n  \"time\": \"11:30\",\n  \"priority\": \"low\"\n}",
+    "exact": false
+  },
+  {
+    "input": "set a reminder to refill my prescription on 29/07/2026 at 11:45, top priority",
+    "gold": {
+      "intent": "reminder",
+      "title": "refill my prescription",
+      "date": "2026-07-29",
+      "time": "11:45",
+      "priority": "high"
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Refill Prescription\",\n  \"date\": \"2026-07-29\",\n  \"time\": \"11:45\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "remind me to collect my transcripts on 2026-09-02 at 11.00 am, normal priority",
+    "gold": {
+      "intent": "reminder",
+      "title": "collect my transcripts",
+      "date": "2026-09-02",
+      "time": "11:00",
+      "priority": "medium"
+    },
+    "raw_output": "{\"intent\":\"reminder\",\"title\":\"collect transcripts\",\"date\":\"2026-09-02\",\"time\":\"11:00\",\"priority\":\"normal\"}",
+    "exact": false
+  },
+  {
+    "input": "log 'fix the bike tyre' as something I have to do at 0815 hours on 9th July",
+    "gold": {
+      "intent": "task",
+      "title": "fix the bike tyre",
+      "date": "2026-07-09",
+      "time": "08:15",
+      "priority": null
+    },
+    "raw_output": "{\"intent\":\"reminder\",\"title\":\"fix the bike tyre\",\"date\":\"2026-07-09\",\"time\":\"0815\",\"priority\":\"high\"}",
+    "exact": false
+  },
+  {
+    "input": "please don't let me forget to send the invoice to the client on the 31st of December at 8:30 am, no rush",
+    "gold": {
+      "intent": "reminder",
+      "title": "send the invoice to the client",
+      "date": "2026-12-31",
+      "time": "08:30",
+      "priority": "low"
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Invoice due - 31st December at 8:30 AM\",\n  \"date\": \"2026-12-31\",\n  \"time\": \"08:30\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "I need a sync on server cost optimisation at 7:15 am, no rush",
+    "gold": {
+      "intent": "meeting",
+      "title": "server cost optimisation",
+      "date": null,
+      "time": "07:15",
+      "priority": "low"
+    },
+    "raw_output": "{\n  \"intent\": \"sync\",\n  \"title\": \"server cost optimisation\",\n  \"date\": \"2026-03-19T15:00:00\",\n  \"time\": \"15:00\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "schedule a meeting about the capstone review on December 4, medium priority",
+    "gold": {
+      "intent": "meeting",
+      "title": "the capstone review",
+      "date": "2026-12-04",
+      "time": null,
+      "priority": "medium"
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Capstone Review Meeting\",\n  \"date\": \"2023-12-04\",\n  \"time\": \"14:00\",\n  \"priority\": \"medium\"\n}",
+    "exact": false
+  },
+  {
+    "input": "don't let me forget to update the project readme on Jul 18, normal priority",
+    "gold": {
+      "intent": "reminder",
+      "title": "update the project readme",
+      "date": "2026-07-18",
+      "time": null,
+      "priority": "medium"
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Update README on Jul 18\",\n  \"date\": \"2026-07-18\",\n  \"time\": \"\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "schedule a meeting about the alumni meetup on 14/05/2026 at 12:45 pm, no rush",
+    "gold": {
+      "intent": "meeting",
+      "title": "the alumni meetup",
+      "date": "2026-05-14",
+      "time": "12:45",
+      "priority": "low"
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Alumni Meetup\",\n  \"date\": \"2026-05-14\",\n  \"time\": \"12:45\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "please set up a meeting for server cost optimisation at 13:00",
+    "gold": {
+      "intent": "meeting",
+      "title": "server cost optimisation",
+      "date": null,
+      "time": "13:00",
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Server Cost Optimisation Meeting\",\n  \"date\": \"2026-04-13\",\n  \"time\": \"13:00\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "log 'refill my prescription' as something I have to do on 7th January",
+    "gold": {
+      "intent": "task",
+      "title": "refill my prescription",
+      "date": "2026-01-07",
+      "time": null,
+      "priority": null
+    },
+    "raw_output": "{\"intent\":\"reminder\",\"title\":\"Refill Prescription\",\"date\":\"2026-01-07\",\"time\":null,\"priority\":\"high\"}",
+    "exact": false
+  },
+  {
+    "input": "book a call to discuss the roadmap workshop at 8:15am on 13 April",
+    "gold": {
+      "intent": "meeting",
+      "title": "the roadmap workshop",
+      "date": "2026-04-13",
+      "time": "08:15",
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Discuss Roadmap Workshop\",\n  \"date\": \"2026-04-13\",\n  \"time\": \"08:15\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "add a task to collect my transcripts at 12.45 pm on 1st September",
+    "gold": {
+      "intent": "task",
+      "title": "collect my transcripts",
+      "date": "2026-09-01",
+      "time": "12:45",
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"task\",\n  \"title\": \"collect transcripts\",\n  \"date\": \"2023-09-01T12:45:00\",\n  \"time\": \"12:45\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "new task: collect my transcripts on 15 March, low priority",
+    "gold": {
+      "intent": "task",
+      "title": "collect my transcripts",
+      "date": "2026-03-15",
+      "time": null,
+      "priority": "low"
+    },
+    "raw_output": "{\n  \"intent\": \"task\",\n  \"title\": \"collect my transcripts\",\n  \"date\": \"2026-03-15\",\n  \"time\": \"\",\n  \"priority\": \"low\"\n}",
+    "exact": false
+  },
+  {
+    "input": "don't let me forget to refill my prescription on November 4th, 2026, no rush",
+    "gold": {
+      "intent": "reminder",
+      "title": "refill my prescription",
+      "date": "2026-11-04",
+      "time": null,
+      "priority": "low"
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Refill Prescription\",\n  \"date\": \"2026-11-04\",\n  \"time\": \"\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "please log 'refill my prescription' as something I have to do at 11 am on May 25, low priority",
+    "gold": {
+      "intent": "task",
+      "title": "refill my prescription",
+      "date": "2026-05-25",
+      "time": "11:00",
+      "priority": "low"
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Refill Prescription\",\n  \"date\": \"2023-05-25\",\n  \"time\": \"11:00\",\n  \"priority\": \"low\"\n}",
+    "exact": false
+  },
+  {
+    "input": "put 'clean the fish tank' on my to-do list on 13/06/2026",
+    "gold": {
+      "intent": "task",
+      "title": "clean the fish tank",
+      "date": "2026-06-13",
+      "time": null,
+      "priority": null
+    },
+    "raw_output": "{\"intent\":\"task\",\"title\":\"clean the fish tank\",\"date\":\"2026-06-13\",\"time\":null,\"priority\":\"high\"}",
+    "exact": false
+  },
+  {
+    "input": "log 'clean the fish tank' as something I have to do at 12:15 pm on 10th June, normal priority",
+    "gold": {
+      "intent": "task",
+      "title": "clean the fish tank",
+      "date": "2026-06-10",
+      "time": "12:15",
+      "priority": "medium"
+    },
+    "raw_output": "{\"intent\":\"reminder\",\"title\":\"clean the fish tank\",\"date\":\"2026-06-10\",\"time\":\"13:15\",\"priority\":\"normal\"}",
+    "exact": false
+  },
+  {
+    "input": "set up a meeting for the alumni meetup at 6:45pm",
+    "gold": {
+      "intent": "meeting",
+      "title": "the alumni meetup",
+      "date": null,
+      "time": "18:45",
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Alumni Meetup\",\n  \"date\": \"2027-10-03\",\n  \"time\": \"18:45\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "new task: refill my prescription at 11:15 am on 19 March",
+    "gold": {
+      "intent": "task",
+      "title": "refill my prescription",
+      "date": "2026-03-19",
+      "time": "11:15",
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"task\",\n  \"title\": \"Refill Prescription\",\n  \"date\": \"2026-03-19T11:15:00\",\n  \"time\": \"11:15\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "can you ping me to collect my transcripts at 1315 hours on the 23rd of May, high priority",
+    "gold": {
+      "intent": "reminder",
+      "title": "collect my transcripts",
+      "date": "2026-05-23",
+      "time": "13:15",
+      "priority": "high"
+    },
+    "raw_output": "{\n  \"intent\": \"task\",\n  \"title\": \"collect transcripts\",\n  \"date\": \"2026-05-23T13:15:00\",\n  \"time\": \"13:15\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "please don't let me forget to clean the fish tank at 1645 hours",
+    "gold": {
+      "intent": "reminder",
+      "title": "clean the fish tank",
+      "date": null,
+      "time": "16:45",
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Clean fish tank\",\n  \"date\": \"2026-03-16\",\n  \"time\": \"16:45\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "log 'clean the fish tank' as something I have to do at 11:30 am",
+    "gold": {
+      "intent": "task",
+      "title": "clean the fish tank",
+      "date": null,
+      "time": "11:30",
+      "priority": null
+    },
+    "raw_output": "{\"intent\":\"task\",\"title\":\"clean the fish tank\",\"date\":\"2026-04-11\",\"time\":\"11:30\",\"priority\":\"high\"}",
+    "exact": false
+  },
+  {
+    "input": "log 'refill my prescription' as something I have to do at 10:30am on the 19th of December, no rush",
+    "gold": {
+      "intent": "task",
+      "title": "refill my prescription",
+      "date": "2026-12-19",
+      "time": "10:30",
+      "priority": "low"
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Refill Prescription\",\n  \"date\": \"2026-12-19T10:30:00\",\n  \"time\": \"10:30\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "book a call to discuss the roadmap workshop on 2026-11-21, no rush",
+    "gold": {
+      "intent": "meeting",
+      "title": "the roadmap workshop",
+      "date": "2026-11-21",
+      "time": null,
+      "priority": "low"
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Discuss Roadmap Workshop\",\n  \"date\": \"2026-11-21\",\n  \"time\": \"\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "I need a sync on the roadmap workshop on the 9th of November, top priority",
+    "gold": {
+      "intent": "meeting",
+      "title": "the roadmap workshop",
+      "date": "2026-11-09",
+      "time": null,
+      "priority": "high"
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Sync on roadmap workshop - 9th November\",\n  \"date\": \"2023-11-09\",\n  \"time\": \"\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "I need a sync on server cost optimisation at 1600 hours",
+    "gold": {
+      "intent": "meeting",
+      "title": "server cost optimisation",
+      "date": null,
+      "time": "16:00",
+      "priority": null
+    },
+    "raw_output": "```json\n{\n  \"intent\": \"sync\",\n  \"title\": \"server cost optimization\",\n  \"date\": \"2026-12-31\",\n  \"time\": \"\",\n  \"priority\": \"high\"\n}\n```",
+    "exact": false
+  },
+  {
+    "input": "new task: update the project readme on May 22 at 10.30 am",
+    "gold": {
+      "intent": "task",
+      "title": "update the project readme",
+      "date": "2026-05-22",
+      "time": "10:30",
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"task\",\n  \"title\": \"update project readme\",\n  \"date\": \"2026-05-22\",\n  \"time\": \"10:30\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "book a call to discuss the customer churn analysis at 4:45 pm",
+    "gold": {
+      "intent": "meeting",
+      "title": "the customer churn analysis",
+      "date": null,
+      "time": "16:45",
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Discuss Customer Churn Analysis\",\n  \"date\": \"2023-10-18\",\n  \"time\": \"14:45\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "put 'refill my prescription' on my to-do list at 0715 hours",
+    "gold": {
+      "intent": "task",
+      "title": "refill my prescription",
+      "date": null,
+      "time": "07:15",
+      "priority": null
+    },
+    "raw_output": "{\"intent\":\"reminder\",\"title\":\"refill my prescription\",\"date\":\"2023-04-19\",\"time\":\"18:15\",\"priority\":\"high\"}",
+    "exact": false
+  },
+  {
+    "input": "schedule a meeting about the alumni meetup on 14/05/2026, low priority",
+    "gold": {
+      "intent": "meeting",
+      "title": "the alumni meetup",
+      "date": "2026-05-14",
+      "time": null,
+      "priority": "low"
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Alumni Meetup\",\n  \"date\": \"2026-05-14\",\n  \"time\": \"\",\n  \"priority\": \"low\"\n}",
+    "exact": false
+  },
+  {
+    "input": "please set up a meeting for the capstone review on the 17th of August",
+    "gold": {
+      "intent": "meeting",
+      "title": "the capstone review",
+      "date": "2026-08-17",
+      "time": null,
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Capstone Review Meeting\",\n  \"date\": \"2023-08-17\",\n  \"time\": \"15:00\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "please schedule a meeting about the alumni meetup on 2026-05-26, medium priority",
+    "gold": {
+      "intent": "meeting",
+      "title": "the alumni meetup",
+      "date": "2026-05-26",
+      "time": null,
+      "priority": "medium"
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Alumni Meetup\",\n  \"date\": \"2026-05-26\",\n  \"time\": \"14:30\",\n  \"priority\": \"medium\"\n}",
+    "exact": false
+  },
+  {
+    "input": "schedule a meeting about server cost optimisation on 2026-10-09 at 6.45 am, normal priority",
+    "gold": {
+      "intent": "meeting",
+      "title": "server cost optimisation",
+      "date": "2026-10-09",
+      "time": "06:45",
+      "priority": "medium"
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"server cost optimisation\",\n  \"date\": \"2026-10-09\",\n  \"time\": \"06:45\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "book a call to discuss server cost optimisation on 29 January at 10:45am, it's urgent",
+    "gold": {
+      "intent": "meeting",
+      "title": "server cost optimisation",
+      "date": "2026-01-29",
+      "time": "10:45",
+      "priority": "high"
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Discuss Server Cost Optimisation\",\n  \"date\": \"2026-01-29\",\n  \"time\": \"10:45\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "can you ping me to collect my transcripts on 11 February, no rush",
+    "gold": {
+      "intent": "reminder",
+      "title": "collect my transcripts",
+      "date": "2026-02-11",
+      "time": null,
+      "priority": "low"
+    },
+    "raw_output": "{\n  \"intent\": \"task\",\n  \"title\": \"collect transcripts\",\n  \"date\": \"2023-02-11\",\n  \"time\": \"\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "put 'clean the fish tank' on my to-do list on the 8th of October at 08:15",
+    "gold": {
+      "intent": "task",
+      "title": "clean the fish tank",
+      "date": "2026-10-08",
+      "time": "08:15",
+      "priority": null
+    },
+    "raw_output": "{\"intent\":\"task\",\"title\":\"clean the fish tank\",\"date\":\"2026-10-08\",\"time\":\"08:15\",\"priority\":\"high\"}",
+    "exact": false
+  },
+  {
+    "input": "set a reminder to send the invoice to the client on September 3rd, 2026 at 07:00",
+    "gold": {
+      "intent": "reminder",
+      "title": "send the invoice to the client",
+      "date": "2026-09-03",
+      "time": "07:00",
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Send Invoice to Client\",\n  \"date\": \"2026-09-03\",\n  \"time\": \"07:00\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "schedule a meeting about the alumni meetup on September 19 at 3.45 pm",
+    "gold": {
+      "intent": "meeting",
+      "title": "the alumni meetup",
+      "date": "2026-09-19",
+      "time": "15:45",
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Alumni Meetup\",\n  \"date\": \"2026-09-19\",\n  \"time\": \"13:45\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "remind me to refill my prescription on 26th December at 8.30 am, low priority",
+    "gold": {
+      "intent": "reminder",
+      "title": "refill my prescription",
+      "date": "2026-12-26",
+      "time": "08:30",
+      "priority": "low"
+    },
+    "raw_output": "{\"intent\":\"reminder\",\"title\":\"refill prescription\",\"date\":\"2026-12-26\",\"time\":\"08:30\",\"priority\":\"low\"}",
+    "exact": false
+  },
+  {
+    "input": "put 'fix the bike tyre' on my to-do list on 18/07/2026 at 11:15 am, high priority",
+    "gold": {
+      "intent": "task",
+      "title": "fix the bike tyre",
+      "date": "2026-07-18",
+      "time": "11:15",
+      "priority": "high"
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Fix the bike tyre\",\n  \"date\": \"2026-07-18\",\n  \"time\": \"11:15 AM\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "new task: update the project readme on 27 July at 12:15 pm, top priority",
+    "gold": {
+      "intent": "task",
+      "title": "update the project readme",
+      "date": "2026-07-27",
+      "time": "12:15",
+      "priority": "high"
+    },
+    "raw_output": "{\n  \"intent\": \"task\",\n  \"title\": \"update project readme\",\n  \"date\": \"2026-07-27T12:15:00\",\n  \"time\": \"13:15\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "add a task to send the invoice to the client on the 31st of October",
+    "gold": {
+      "intent": "task",
+      "title": "send the invoice to the client",
+      "date": "2026-10-31",
+      "time": null,
+      "priority": null
+    },
+    "raw_output": "```json\n{\n  \"intent\": \"task\",\n  \"title\": \"send invoice to client\",\n  \"date\": \"2027-10-31\",\n  \"time\": \"\",\n  \"priority\": \"high\"\n}\n```",
+    "exact": false
+  },
+  {
+    "input": "remind me to fix the bike tyre",
+    "gold": {
+      "intent": "reminder",
+      "title": "fix the bike tyre",
+      "date": null,
+      "time": null,
+      "priority": null
+    },
+    "raw_output": "{\"intent\":\"reminder\",\"title\":\"fix bike tyre\",\"date\":\"\",\"time\":\"\",\"priority\":\"\"}",
+    "exact": false
+  },
+  {
+    "input": "can you ping me to update the project readme on 17th June, normal priority",
+    "gold": {
+      "intent": "reminder",
+      "title": "update the project readme",
+      "date": "2026-06-17",
+      "time": null,
+      "priority": "medium"
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Update README on 17th June\",\n  \"date\": \"2026-06-17\",\n  \"time\": \"09:00\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "schedule a meeting about the roadmap workshop at 0600 hours, it's urgent",
+    "gold": {
+      "intent": "meeting",
+      "title": "the roadmap workshop",
+      "date": null,
+      "time": "06:00",
+      "priority": "high"
+    },
+    "raw_output": "{\n  \"intent\": \"meeting\",\n  \"title\": \"Roadmap Workshop\",\n  \"date\": \"2026-10-05\",\n  \"time\": \"06:00\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "set a reminder to update the project readme on February 19th, 2026",
+    "gold": {
+      "intent": "reminder",
+      "title": "update the project readme",
+      "date": "2026-02-19",
+      "time": null,
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Update project README\",\n  \"date\": \"2026-02-19\",\n  \"time\": \"\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "log 'update the project readme' as something I have to do at 07:00 on 02/06/2026",
+    "gold": {
+      "intent": "task",
+      "title": "update the project readme",
+      "date": "2026-06-02",
+      "time": "07:00",
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Update project README\",\n  \"date\": \"2026-06-02\",\n  \"time\": \"13:00\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "please remind me to collect my transcripts",
+    "gold": {
+      "intent": "reminder",
+      "title": "collect my transcripts",
+      "date": null,
+      "time": null,
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"collect transcripts\",\n  \"date\": \"2023-10-05\",\n  \"time\": \"\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "remind me to clean the fish tank at 1400 hours, high priority",
+    "gold": {
+      "intent": "reminder",
+      "title": "clean the fish tank",
+      "date": null,
+      "time": "14:00",
+      "priority": "high"
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Clean Fish Tank\",\n  \"date\": \"2026-03-14T23:00:00\",\n  \"time\": \"14:00\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "remind me to refill my prescription on the 20th of January at 9.45 pm",
+    "gold": {
+      "intent": "reminder",
+      "title": "refill my prescription",
+      "date": "2026-01-20",
+      "time": "21:45",
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Refill Prescription\",\n  \"date\": \"2026-01-20T23:45:00\",\n  \"time\": \"21:45\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "remind me to send the invoice to the client on December 30th, 2026, no rush",
+    "gold": {
+      "intent": "reminder",
+      "title": "send the invoice to the client",
+      "date": "2026-12-30",
+      "time": null,
+      "priority": "low"
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"send invoice\",\n  \"date\": \"2026-12-30\",\n  \"time\": \"\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  },
+  {
+    "input": "remind me to refill my prescription on October 16th, 2026",
+    "gold": {
+      "intent": "reminder",
+      "title": "refill my prescription",
+      "date": "2026-10-16",
+      "time": null,
+      "priority": null
+    },
+    "raw_output": "{\n  \"intent\": \"reminder\",\n  \"title\": \"Refill Prescription\",\n  \"date\": \"2026-10-16\",\n  \"time\": \"\",\n  \"priority\": \"high\"\n}",
+    "exact": false
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "tag": "base",
+  "n": 100,
+  "strict_valid_json_pct": 97.0,
+  "lenient_valid_json_pct": 100.0,
+  "exact_match_pct": 0.0,
+  "field_accuracy_pct": {
+    "intent": 70.0,
+    "title": 15.0,
+    "date": 49.0,
+    "time": 49.0,
+    "priority": 35.0
+  }
+}

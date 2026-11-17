@@ -1,0 +1,17 @@
+{
+  "trainable_params": 8798208,
+  "total_params": 502830976,
+  "trainable_pct": 1.7497346861940344,
+  "train_seconds": 649.1258130073547,
+  "peak_gpu_mem_gb": 9.044317184,
+  "final_logged_loss": 4.410702676977962e-05,
+  "config": {
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "lr": 0.0002,
+    "epochs": 3,
+    "out": "adapter"
+  }
+}

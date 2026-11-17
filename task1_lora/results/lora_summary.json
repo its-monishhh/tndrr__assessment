@@ -1,0 +1,14 @@
+{
+  "tag": "lora",
+  "n": 100,
+  "strict_valid_json_pct": 100.0,
+  "lenient_valid_json_pct": 100.0,
+  "exact_match_pct": 78.0,
+  "field_accuracy_pct": {
+    "intent": 84.0,
+    "title": 89.0,
+    "date": 100.0,
+    "time": 100.0,
+    "priority": 100.0
+  }
+}

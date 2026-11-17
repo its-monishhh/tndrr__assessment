@@ -49,7 +49,7 @@ def collate(batch):
 bf16 = torch.cuda.is_available() and torch.cuda.is_bf16_supported()
 args = TrainingArguments(
     output_dir="runs", per_device_train_batch_size=8, gradient_accumulation_steps=2,
-    learning_rate=a.lr, num_train_epochs=a.epochs, lr_scheduler_type="cosine", warmup_ratio=0.03,
+    learning_rate=a.lr, num_train_epochs=a.epochs, lr_scheduler_type="cosine", warmup_steps=6,
     logging_steps=10, save_strategy="no", bf16=bf16, fp16=not bf16, report_to="none",
     remove_unused_columns=False)
 trainer = Trainer(model=model, args=args, train_dataset=ds, data_collator=collate)
