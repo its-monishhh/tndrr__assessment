@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "section": "Executive Summary",
+    "question": "What phrasing does the framework use to describe machine-based systems generating predictions or decisions?",
+    "gold_passage": "The AI RMF refers to an AI system as an engineered or machine-based system that can, for a given set of objectives, generate outputs such as predictions, recommendations, or decisions influencing real or virtual environments."
+  },
+  {
+    "id": 2,
+    "section": "1.1 Understanding and Addressing Risks, Impacts, and Harms",
+    "question": "How does the document conceptually express the notion of risk?",
+    "gold_passage": "risk refers to the composite measure of an event's probability of occurring and the magnitude or degree of the consequences of the corresponding event."
+  },
+  {
+    "id": 3,
+    "section": "1.2.2 Risk Tolerance",
+    "question": "What concept captures an enterprise's willingness to accept uncertainties in pursuit of its goals?",
+    "gold_passage": "Risk tolerance refers to the organization's or AI actor's (see Appendix A) readiness to bear the risk in order to achieve its objectives."
+  },
+  {
+    "id": 4,
+    "section": "1.2.3 Risk Prioritization",
+    "question": "Under what critical conditions should an organisation immediately halt the creation and rollout of an intelligent system?",
+    "gold_passage": "In cases where an AI system presents unacceptable negative risk levels – such as where significant negative impacts are imminent, severe harms are actually occurring, or catastrophic risks are present – development and deployment should cease in a safe manner until risks can be sufficiently managed."
+  },
+  {
+    "id": 5,
+    "section": "2. Audience",
+    "question": "Which stakeholder groups make up the supporting audience that feeds perspectives into the primary lifecycle actors from the central dimension?",
+    "gold_passage": "These AI actors may include trade associations, standards developing organizations, researchers, advocacy groups,"
+  },
+  {
+    "id": 6,
+    "section": "3. AI Risks and Trustworthiness",
+    "question": "What are the core traits that define dependable and responsible intelligent technologies according to the framework?",
+    "gold_passage": "Characteristics of trustworthy AI systems include: valid and reliable, safe, secure and resilient, accountable and transparent, explainable and interpretable, privacy-enhanced, and fair with harmful bias managed."
+  },
+  {
+    "id": 7,
+    "section": "3.1 Valid and Reliable",
+    "question": "How does technical standardization formally define dependability over a specified operating interval?",
+    "gold_passage": "Reliability is defined in the same standard as the \"ability of an item to perform as required, without failure, for a given time interval, under given conditions\" (Source: ISO /IEC TS 5723:2022)."
+  },
+  {
+    "id": 8,
+    "section": "3.3 Secure and Resilient",
+    "question": "What specific threat vectors are commonly cited regarding system security vulnerabilities?",
+    "gold_passage": "Common security concerns relate to adversarial examples, data poisoning, and the exfiltration of models, training data, or other intellectual property through AI system endpoints."
+  },
+  {
+    "id": 9,
+    "section": "3.5 Explainable and Interpretable",
+    "question": "Which specific property answers the user's query about the rationale or contextual meaning behind a model's output?",
+    "gold_passage": "Interpretability can answer the question of \"why\" a decision was made by the system and its meaning or context to the user."
+  },
+  {
+    "id": 10,
+    "section": "3.7 Fair - with Harmful Bias Managed",
+    "question": "What classification of skew does NIST outline that can infiltrate automated decision-making streams?",
+    "gold_passage": "NIST has identified three major categories of AI bias to be considered and managed: systemic, computational and statistical, and human-cognitive."
+  },
+  {
+    "id": 11,
+    "section": "5. AI RMF Core",
+    "question": "What are the four foundational pillars that structure risk management activities in the framework's core?",
+    "gold_passage": "As illustrated in Figure 5, the Core is composed of four functions: GOVERN , MAP, MEASURE , and MANAGE ."
+  },
+  {
+    "id": 12,
+    "section": "5.2 Map",
+    "question": "How does the information gathered during the mapping phase enable negative risk prevention and inform subsequent choices?",
+    "gold_passage": "The information gathered while carrying out the MAP function enables negative risk prevention and informs decisions for processes such as model management, as well as an initial decision about appropriateness or the need for an AI solution."
+  },
+  {
+    "id": 13,
+    "section": "5.3 Measure",
+    "question": "What methodological approaches are utilized during the measurement phase to evaluate risk impacts?",
+    "gold_passage": "The MEASURE function employs quantitative, qualitative, or mixed-method tools, techniques, and methodologies to analyze, assess, benchmark, and monitor AI risk and related impacts."
+  },
+  {
+    "id": 14,
+    "section": "6. AI RMF Profiles",
+    "question": "What does an AI RMF Current Profile indicate about how AI is currently being managed?",
+    "gold_passage": "An AI RMF Current Profile indicates how AI is currently being managed and the related risks in terms of current outcomes."
+  },
+  {
+    "id": 15,
+    "section": "Appendix B: How AI Risks Differ from Traditional Software Risks",
+    "question": "How massive can the scale and architectural complexity of advanced models get in terms of internal decision points?",
+    "gold_passage": "AI system scale and complexity (many systems contain billions or even trillions of decision points) housed within more traditional software applications."
+  }
+]

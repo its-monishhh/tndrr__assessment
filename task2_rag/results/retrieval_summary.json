@@ -1,0 +1,56 @@
+[
+  {
+    "chunk_words": 100,
+    "overlap_words": 20,
+    "n_chunks": 196,
+    "method": "dense",
+    "recall@1": 0.6,
+    "recall@3": 0.733,
+    "recall@5": 0.933
+  },
+  {
+    "chunk_words": 100,
+    "overlap_words": 20,
+    "n_chunks": 196,
+    "method": "bm25",
+    "recall@1": 0.4,
+    "recall@3": 0.467,
+    "recall@5": 0.533
+  },
+  {
+    "chunk_words": 100,
+    "overlap_words": 20,
+    "n_chunks": 196,
+    "method": "hybrid_rrf",
+    "recall@1": 0.6,
+    "recall@3": 0.733,
+    "recall@5": 0.733
+  },
+  {
+    "chunk_words": 250,
+    "overlap_words": 50,
+    "n_chunks": 79,
+    "method": "dense",
+    "recall@1": 0.667,
+    "recall@3": 0.733,
+    "recall@5": 0.933
+  },
+  {
+    "chunk_words": 250,
+    "overlap_words": 50,
+    "n_chunks": 79,
+    "method": "bm25",
+    "recall@1": 0.533,
+    "recall@3": 0.667,
+    "recall@5": 0.733
+  },
+  {
+    "chunk_words": 250,
+    "overlap_words": 50,
+    "n_chunks": 79,
+    "method": "hybrid_rrf",
+    "recall@1": 0.6,
+    "recall@3": 0.867,
+    "recall@5": 0.933
+  }
+]
