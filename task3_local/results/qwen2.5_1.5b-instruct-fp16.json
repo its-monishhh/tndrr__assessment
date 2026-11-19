@@ -1,0 +1,105 @@
+{
+  "summary": {
+    "model": "qwen2.5:1.5b-instruct-fp16",
+    "runs_per_prompt": 1,
+    "memory": {
+      "size_bytes": 3219946208,
+      "size_vram_bytes": 0
+    },
+    "mean_gen_tokens_per_s": 9.0535712701353,
+    "median_gen_tokens_per_s": 9.775545858206632,
+    "stdev_gen_tokens_per_s": 2.4272961429872857
+  },
+  "rows": [
+    {
+      "prompt_id": 1,
+      "run": 0,
+      "prompt": "Explain in two sentences what a hash table is.",
+      "output": "A hash table is a data structure that uses a hash function to map keys to array indices, allowing for efficient insertion, deletion, and search operations.",
+      "tokens": 31,
+      "gen_tokens_per_s": 9.881347331271213,
+      "prompt_tokens_per_s": 100.27374733021148
+    },
+    {
+      "prompt_id": 2,
+      "run": 0,
+      "prompt": "What is 17 * 24? Show the steps briefly, then give the final answer.",
+      "output": "Sure, let's break it down step by step:\n\n1. **Multiply the units digits**: 7 * 4 = 28\n2. **Multiply the tens digits**: 1 * 2 = 2\n3. **Add the results from steps 1 and 2**: 28 + 2 = 30\n\nSo, 17 * 24 = 308.",
+      "tokens": 87,
+      "gen_tokens_per_s": 10.327155992640892,
+      "prompt_tokens_per_s": 90.31661392176414
+    },
+    {
+      "prompt_id": 3,
+      "run": 0,
+      "prompt": "Write a Python function that returns the n-th Fibonacci number iteratively.",
+      "output": "Certainly! The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones, usually starting with 0 and 1. Here's a Python function that calculates the n-th Fibonacci number iteratively:\n\n```python\ndef fibonacci(n):\n    if n <= 0:\n        return \"Input should be a positive integer.\"\n    elif n == 1:\n        return 0\n    elif n == 2:\n        return 1\n    \n    a, b = 0, 1\n    for _ in range(2, n):\n        a, b = b, a + b\n    return b\n\n# Example usage:\nprint(fibonacci(10))  # Output: 34\n```\n\n### Explanation:\n1. **Base Cases**:\n   - If `n` is less than or equal to 0, return an error message.\n   - If `n` is 1, return 0 (since the first Fibonacci",
+      "tokens": 200,
+      "gen_tokens_per_s": 9.669744385142051,
+      "prompt_tokens_per_s": 98.73458994147106
+    },
+    {
+      "prompt_id": 4,
+      "run": 0,
+      "prompt": "Summarise in one sentence: Photosynthesis is the process by which plants use sunlight, water and carbon dioxide to produce glucose and oxygen.",
+      "output": "Photosynthesis is the process by which plants convert sunlight, water, and carbon dioxide into glucose and oxygen.",
+      "tokens": 22,
+      "gen_tokens_per_s": 9.979505724153759,
+      "prompt_tokens_per_s": 92.97530771564563
+    },
+    {
+      "prompt_id": 5,
+      "run": 0,
+      "prompt": "Return only valid JSON with keys name and age for this sentence: Priya is 29 years old.",
+      "output": "```json\n{\n  \"name\": \"Priya\",\n  \"age\": 29\n}\n```",
+      "tokens": 23,
+      "gen_tokens_per_s": 10.731461051095286,
+      "prompt_tokens_per_s": 90.70520630098832
+    },
+    {
+      "prompt_id": 6,
+      "run": 0,
+      "prompt": "Translate to French: The library closes at eight o'clock tonight.",
+      "output": "La bibliothèque ferme à huit heures ce soir.",
+      "tokens": 15,
+      "gen_tokens_per_s": 9.622546010203747,
+      "prompt_tokens_per_s": 91.05315986983734
+    },
+    {
+      "prompt_id": 7,
+      "run": 0,
+      "prompt": "A bat and a ball cost 1.10 in total. The bat costs 1.00 more than the ball. How much does the ball cost?",
+      "output": "Let's denote the cost of the ball as \\( x \\) dollars. According to the problem, the bat costs \\( x + 1.00 \\) dollars. The total cost of the bat and the ball is given as 1.10 dollars. Therefore, we can set up the following equation:\n\n\\[ x + (x + 1.00) = 1.10 \\]\n\nSimplifying the left side of the equation, we get:\n\n\\[ 2x + 1.00 = 1.10 \\]\n\nNext, we need to isolate \\( x \\). We do this by subtracting 1.00 from both sides of the equation:\n\n\\[ 2x = 0.10 \\]\n\nNow, we solve for \\( x \\) by dividing both sides by 2:\n\n\\[ x = 0.05 \\]\n\nSo, the cost of the ball is \\( 0.05 \\) dollars,",
+      "tokens": 200,
+      "gen_tokens_per_s": 10.407186370332441,
+      "prompt_tokens_per_s": 88.99448940471162
+    },
+    {
+      "prompt_id": 8,
+      "run": 0,
+      "prompt": "Give three differences between TCP and UDP as a short bulleted list.",
+      "output": "Sure, here are three differences between TCP (Transmission Control Protocol) and UDP (User Datagram Protocol):\n\n1. **Connection-oriented vs. Connectionless**: TCP is a connection-oriented protocol, meaning it establishes a dedicated connection between the sender and receiver before data transmission begins. UDP, on the other hand, is connectionless, which means it does not establish a connection before sending data. This difference affects how data is transmitted and how errors are handled.\n\n2. **Error Handling**: TCP provides reliable data transmission by ensuring that data is delivered in the correct order and without errors. UDP, being connectionless, does not guarantee delivery or error-free transmission. Instead, it relies on the receiver to acknowledge receipt of data, which can lead to potential loss or corruption of data.\n\n3. **Latency and Throughput**: TCP is generally more suitable for applications requiring high reliability and low latency, such as real-time communication or critical data transfer. UDP, being connectionless, can be faster and more efficient for applications",
+      "tokens": 200,
+      "gen_tokens_per_s": 1.9555956774256273,
+      "prompt_tokens_per_s": 107.80427757345107
+    },
+    {
+      "prompt_id": 9,
+      "run": 0,
+      "prompt": "Write a four-line poem about monsoon rain in Bengaluru.",
+      "output": "In Bengaluru, where monsoon rains do fall,\nThe city breathes in a symphony of sound.\nThe streets are slick, the skies are heavy,\nAs nature's drum beats out its rhythm.",
+      "tokens": 42,
+      "gen_tokens_per_s": 9.051925075060932,
+      "prompt_tokens_per_s": 134.28397864245292
+    },
+    {
+      "prompt_id": 10,
+      "run": 0,
+      "prompt": "Is it safe to leave cooked rice at room temperature overnight? Answer in three sentences.",
+      "output": "No, it is not safe to leave cooked rice at room temperature overnight because it can lead to the growth of harmful bacteria, potentially causing food poisoning. Proper food storage and handling practices should be followed to ensure food safety.",
+      "tokens": 45,
+      "gen_tokens_per_s": 8.90924508402705,
+      "prompt_tokens_per_s": 92.3257251583587
+    }
+  ]
+}
